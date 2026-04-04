@@ -3,6 +3,20 @@
 A robust Android application built with **Jetpack Compose** that simulates a live stock market feed. 
 The app demonstrates real-time data handling using WebSockets with MVVM patterns.
 
+## Feed Screen
+
+<p float="left">
+	<img src="https://github.com/noshadalam661/real-time-pricetracker/blob/main/SS/feed.jpeg" width="200"/>
+</p>
+
+## Symbol Detail Screen
+
+<p float="left">
+	<img src="https://github.com/noshadalam661/real-time-pricetracker/blob/main/SS/feed_detail_1.jpeg" width="200"/>
+	<img src="https://github.com/noshadalam661/real-time-pricetracker/blob/main/SS/feed_detail_2.jpeg" width="200"/>
+</p>
+
+
 ## 🚀 Features
 
 - **Live Price Feed**: Monitors 25 stock symbols (NVDA, AAPL, GOOG, etc.) with real-time updates.
