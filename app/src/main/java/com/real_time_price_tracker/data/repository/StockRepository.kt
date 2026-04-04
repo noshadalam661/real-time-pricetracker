@@ -1,4 +1,5 @@
 package com.real_time_price_tracker.data.repository
+import com.real_time_price_tracker.constant.NetworkConfig
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -19,7 +20,7 @@ class StockRepository {
     val isConnected = _isConnected.asStateFlow()
 
     fun connect() {
-        val request = Request.Builder().url("wss://ws.postman-echo.com/raw").build()
+        val request = Request.Builder().url(NetworkConfig.baseUrl).build()
         webSocket = client.newWebSocket(request, object : WebSocketListener() {
             override fun onOpen(webSocket: WebSocket, response: Response) {
                 _isConnected.value = true
