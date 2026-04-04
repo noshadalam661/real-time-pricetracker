@@ -1,4 +1,6 @@
 package com.real_time_price_tracker.data.model
 
-class PriceUpdate {
-}
+data class PriceUpdate(
+    val symbol: String,
+    val price: Double
+)
